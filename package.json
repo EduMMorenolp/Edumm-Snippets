@@ -1,0 +1,44 @@
+{
+  "name": "edumm-snippets",
+  "displayName": "edumm-snippets",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "css",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "java",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "react",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "nodejs",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
