@@ -1,7 +1,8 @@
 {
   "For Loop": {
-    "prefix": ["for", "for-const"],
+    "prefix": ["edumm-node"],
     "body": ["for (const ${2:element} of ${1:array}) {", "\t$0", "}"],
     "description": "A for loop."
   }
 }
+
