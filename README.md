@@ -32,14 +32,34 @@ npm install -g vsce
 
 Una vez que vsce esté instalado, puedes crear el archivo VSIX ejecutando el siguiente comando en la raíz del repositorio:
 ```
-vsce package
+npx vsce package
 ```
 Esto generará un archivo .vsix en la carpeta raíz del repositorio, que puedes utilizar para instalar la extensión en Visual Studio Code.
 
-### Instalación desde el archivo VSIX
-Puedes instalar la extensión desde el archivo .vsix descargado de la carpeta "install" en este repositorio. Abre Visual Studio Code, ve a la pestaña de extensiones, haz clic en el icono de tres puntos en la esquina superior derecha y selecciona "Instalar desde archivo VSIX". Luego, elige el archivo .vsix descargado y la extensión se instalará en tu editor.
+# Instalación de la Extensión
 
-¡Disfruta de tus nuevos snippets!
+A continuación, se detallan los pasos para instalar esta extensión en Visual Studio Code utilizando un archivo VSIX:
+
+## Pasos
+
+1. **Descarga del Archivo VSIX:**
+   - Ve a la sección de "Install" en el repositorio de esta extensión en GitHub.
+   - Encuentra la última versión de la extensión y descarga el archivo VSIX asociado.
+
+2. **Instalación desde Visual Studio Code:**
+   - Abre Visual Studio Code.
+   - Ve a la pestaña de extensiones haciendo clic en el ícono de la caja en la barra lateral izquierda (o presionando `Ctrl+Shift+X`).
+   - Haz clic en el icono de tres puntos en la esquina superior derecha de la pestaña de extensiones.
+   - Selecciona "Instalar desde archivo VSIX" en el menú desplegable.
+   - Navega hasta la ubicación donde descargaste el archivo VSIX y selecciónalo.
+   - Confirma la instalación de la extensión cuando se te solicite.
+
+3. **Comprobación de la Instalación:**
+   - Una vez que la instalación esté completa, deberías ver un mensaje de confirmación en la esquina inferior derecha de Visual Studio Code.
+   - Además, puedes comprobar si la extensión está instalada correctamente buscándola en la lista de extensiones instaladas en la pestaña de extensiones.
+
+¡Listo! Ahora has instalado con éxito la extensión en Visual Studio Code utilizando un archivo VSIX.
+
 
 
 

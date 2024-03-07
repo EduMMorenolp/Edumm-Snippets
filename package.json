@@ -1,8 +1,9 @@
 {
   "name": "edumm-snippets",
-  "displayName": "edumm-snippets",
-  "description": "",
+  "displayName": "Conjunto de Snippets EduMM",
+  "description": "Conjunto de snippets para Visual Studio Code",
   "version": "0.0.1",
+  "publisher": "EduMMoreno",
   "engines": {
     "vscode": "^1.87.0"
   },
@@ -10,39 +11,40 @@
     "Snippets"
   ],
   "contributes": {
-    "snippets": [
-      {
-        "language": "javascript",
-        "path": "./snippets/javascript-snippets.code-snippets"
-      },
-      {
-        "language": "html",
-        "path": "./snippets/html-snippets.code-snippets"
-      },
-      {
-        "language": "css",
-        "path": "./snippets/css-snippets.code-snippets"
-      },
-      {
-        "language": "java",
-        "path": "./snippets/java-snippets.code-snippets"
-      },
-      {
-        "language": "python",
-        "path": "./snippets/python-snippets.code-snippets"
-      },
-      {
-        "language": "react",
-        "path": "./snippets/react-snippets.code-snippets"
-      },
-      {
-        "language": "nodejs",
-        "path": "./snippets/nodejs-snippets.code-snippets"
-      },
-      {
-        "language": "express",
-        "path": "./snippets/express-snippets.code-snippets"
-      }
-    ]
+    "contributes": {
+      "snippets": [
+        {
+          "language": "javascript",
+          "path": "./snippets/javascript-snippets.code-snippets"
+        },
+        {
+          "language": "html",
+          "path": "./snippets/html-snippets.code-snippets"
+        },
+        {
+          "language": "css",
+          "path": "./snippets/css-snippets.code-snippets"
+        },
+        {
+          "language": "java",
+          "path": "./snippets/java-snippets.code-snippets"
+        },
+        {
+          "language": "python",
+          "path": "./snippets/python-snippets.code-snippets"
+        },
+        {
+          "language": "react",
+          "path": "./snippets/react-snippets.code-snippets"
+        },
+        {
+          "language": "nodejs",
+          "path": "./snippets/nodejs-snippets.code-snippets"
+        }
+      ]
+    }
+  },
+  "devDependencies": {
+    "vsce": "^2.15.0"
   }
 }
