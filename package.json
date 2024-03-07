@@ -7,42 +7,44 @@
   "engines": {
     "vscode": "^1.87.0"
   },
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/EduMMorenolp/Edumm-Snippets"
+  },
   "categories": [
     "Snippets"
   ],
   "contributes": {
-    "contributes": {
-      "snippets": [
-        {
-          "language": "javascript",
-          "path": "./snippets/javascript-snippets.code-snippets"
-        },
-        {
-          "language": "html",
-          "path": "./snippets/html-snippets.code-snippets"
-        },
-        {
-          "language": "css",
-          "path": "./snippets/css-snippets.code-snippets"
-        },
-        {
-          "language": "java",
-          "path": "./snippets/java-snippets.code-snippets"
-        },
-        {
-          "language": "python",
-          "path": "./snippets/python-snippets.code-snippets"
-        },
-        {
-          "language": "react",
-          "path": "./snippets/react-snippets.code-snippets"
-        },
-        {
-          "language": "nodejs",
-          "path": "./snippets/nodejs-snippets.code-snippets"
-        }
-      ]
-    }
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript-snippets.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/html-snippets.code-snippets"
+      },
+      {
+        "language": "css",
+        "path": "./snippets/css-snippets.code-snippets"
+      },
+      {
+        "language": "java",
+        "path": "./snippets/java-snippets.code-snippets"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/python-snippets.code-snippets"
+      },
+      {
+        "language": "react",
+        "path": "./snippets/react-snippets.code-snippets"
+      },
+      {
+        "language": "nodejs",
+        "path": "./snippets/nodejs-snippets.code-snippets"
+      }
+    ]
   },
   "devDependencies": {
     "vsce": "^2.15.0"
