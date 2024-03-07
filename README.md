@@ -11,7 +11,7 @@ Este repositorio contiene un conjunto de snippets que he creado para facilitar e
 - **Python**: Los snippets para Python se encuentran en el archivo `python-snippets.code-snippets`.
 - **React**: Los snippets para React se encuentran en el archivo `react-snippets.code-snippets`.
 - **Node.js**: Los snippets para Node.js se encuentran en el archivo `nodejs-snippets.code-snippets`.
-- **Express**: Los snippets para Express se encuentran en el archivo `express-snippets.code-snippets`.
+- **Express**: Los snippets para Express se encuentran en el archivo `javascript-snippets.code-snippets`.
 
 ## Cómo utilizar este repositorio
 
