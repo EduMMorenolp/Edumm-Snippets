@@ -13,31 +13,35 @@
     "snippets": [
       {
         "language": "javascript",
-        "path": "./snippets/snippets.code-snippets"
+        "path": "./snippets/javascript-snippets.code-snippets"
       },
       {
         "language": "html",
-        "path": "./snippets/snippets.code-snippets"
+        "path": "./snippets/html-snippets.code-snippets"
       },
       {
         "language": "css",
-        "path": "./snippets/snippets.code-snippets"
+        "path": "./snippets/css-snippets.code-snippets"
       },
       {
         "language": "java",
-        "path": "./snippets/snippets.code-snippets"
+        "path": "./snippets/java-snippets.code-snippets"
       },
       {
         "language": "python",
-        "path": "./snippets/snippets.code-snippets"
+        "path": "./snippets/python-snippets.code-snippets"
       },
       {
         "language": "react",
-        "path": "./snippets/snippets.code-snippets"
+        "path": "./snippets/react-snippets.code-snippets"
       },
       {
         "language": "nodejs",
-        "path": "./snippets/snippets.code-snippets"
+        "path": "./snippets/nodejs-snippets.code-snippets"
+      },
+      {
+        "language": "express",
+        "path": "./snippets/express-snippets.code-snippets"
       }
     ]
   }

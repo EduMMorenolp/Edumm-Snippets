@@ -63,3 +63,22 @@ You can author your README using Visual Studio Code. Here are some useful editor
 * [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
 **Enjoy!**
+
+Para los usuarios, para instalar un .vsixarchivo en VS Code:
+
+Vaya a la vista Extensiones.
+Haga clic en Vistas y más acciones...
+Seleccione Instalar desde VSIX...
+o
+
+en tu terminal, ejecuta el siguiente comando:
+
+# if you use VS Code
+code --install-extension my-extension-0.0.1.vsix
+
+# if you use VS Code Insiders
+code-insiders --install-extension my-extension-0.0.1.vsix
+
+# add vsix Repositorio comand
+
+```npm vsce package```
