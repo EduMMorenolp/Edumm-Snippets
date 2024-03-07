@@ -41,8 +41,12 @@
         "path": "./snippets/react-snippets.code-snippets"
       },
       {
-        "language": "nodejs",
+        "language": "javascript",
         "path": "./snippets/nodejs-snippets.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/express-snippets.code-snippets"
       }
     ]
   },
