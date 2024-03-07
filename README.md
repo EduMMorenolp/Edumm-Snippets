@@ -1,84 +1,47 @@
-# edumm-snippets README
+# Conjunto de Snippets para Visual Studio Code
 
-This is the README for your extension "edumm-snippets". After writing up a brief description, we recommend including the following sections.
+Este repositorio contiene un conjunto de snippets que he creado para facilitar el desarrollo en varios lenguajes de programación y tecnologías en Visual Studio Code.
 
-## Features
+## Snippets incluidos
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- **JavaScript**: Los snippets para JavaScript se encuentran en el archivo `javascript-snippets.code-snippets`.
+- **HTML**: Los snippets para HTML se encuentran en el archivo `html-snippets.code-snippets`.
+- **CSS**: Los snippets para CSS se encuentran en el archivo `css-snippets.code-snippets`.
+- **Java**: Los snippets para Java se encuentran en el archivo `java-snippets.code-snippets`.
+- **Python**: Los snippets para Python se encuentran en el archivo `python-snippets.code-snippets`.
+- **React**: Los snippets para React se encuentran en el archivo `react-snippets.code-snippets`.
+- **Node.js**: Los snippets para Node.js se encuentran en el archivo `nodejs-snippets.code-snippets`.
+- **Express**: Los snippets para Express se encuentran en el archivo `express-snippets.code-snippets`.
 
-For example if there is an image subfolder under your extension project workspace:
+## Cómo utilizar este repositorio
 
-\!\[feature X\]\(images/feature-x.png\)
+### Clonar el repositorio
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+Puedes clonar este repositorio ejecutando el siguiente comando en tu terminal:
 
-## Requirements
+```bash
+git clone https://github.com/tu-usuario/mi-conjunto-de-snippets.git
+```
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+### Crear el archivo VSIX
+Para empaquetar la extensión en un archivo VSIX, necesitas tener instalada la herramienta vsce. Si no la tienes instalada, puedes hacerlo mediante el siguiente comando:
 
-## Extension Settings
+```
+npm install -g vsce
+```
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+Una vez que vsce esté instalado, puedes crear el archivo VSIX ejecutando el siguiente comando en la raíz del repositorio:
+```
+vsce package
+```
+Esto generará un archivo .vsix en la carpeta raíz del repositorio, que puedes utilizar para instalar la extensión en Visual Studio Code.
 
-For example:
+### Instalación desde el archivo VSIX
+Puedes instalar la extensión desde el archivo .vsix descargado de la carpeta "install" en este repositorio. Abre Visual Studio Code, ve a la pestaña de extensiones, haz clic en el icono de tres puntos en la esquina superior derecha y selecciona "Instalar desde archivo VSIX". Luego, elige el archivo .vsix descargado y la extensión se instalará en tu editor.
 
-This extension contributes the following settings:
+¡Disfruta de tus nuevos snippets!
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
 
-## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
 
-## Release Notes
 
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
-
-Para los usuarios, para instalar un .vsixarchivo en VS Code:
-
-Vaya a la vista Extensiones.
-Haga clic en Vistas y más acciones...
-Seleccione Instalar desde VSIX...
-o
-
-en tu terminal, ejecuta el siguiente comando:
-
-# if you use VS Code
-code --install-extension my-extension-0.0.1.vsix
-
-# if you use VS Code Insiders
-code-insiders --install-extension my-extension-0.0.1.vsix
-
-# add vsix Repositorio comand
-
-```npm vsce package```
