@@ -20,7 +20,7 @@ Este repositorio contiene un conjunto de snippets que he creado para facilitar e
 Puedes clonar este repositorio ejecutando el siguiente comando en tu terminal:
 
 ```bash
-git clone https://github.com/tu-usuario/mi-conjunto-de-snippets.git
+git clone https://github.com/EduMMorenolp/Edumm-Snippets
 ```
 
 ### Crear el archivo VSIX
