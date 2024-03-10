@@ -13,6 +13,14 @@ Este repositorio contiene un conjunto de snippets que he creado para facilitar e
 - **Node.js**: Los snippets para Node.js se encuentran en el archivo `nodejs-snippets.code-snippets`.
 - **Express**: Los snippets para Express se encuentran en el archivo `javascript-snippets.code-snippets`.
 
+## Tecnologías utilizadas
+
+<p align="center">
+  <a href="">
+    <img src="https://skillicons.dev/icons?i=js,nodejs,git,github,powershell,npm&perline=14" />
+  </a>
+</p>
+
 ## Cómo utilizar este repositorio
 
 ### Clonar el repositorio
