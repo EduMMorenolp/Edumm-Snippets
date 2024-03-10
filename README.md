@@ -17,7 +17,7 @@ Este repositorio contiene un conjunto de snippets que he creado para facilitar e
 
 <p align="center">
   <a href="">
-    <img src="https://skillicons.dev/icons?i=js,nodejs,git,github,powershell,npm&perline=14" />
+    <img src="https://skillicons.dev/icons?i=js,nodejs,git,github,powershell,npm,vscode&perline=14" />
   </a>
 </p>
 
