@@ -24,6 +24,33 @@
       ],
       "description": "Crear una ruta básica en Express."
     },
+    "Express Routes CRUD": {
+      "prefix": ["edumm-exp-route-crud"],
+      "body": [
+        "const router = require('express').Router();",
+        "",
+        "router.get('/${1}', (req, res) => {",
+        "  res.render('${2}');",
+        "});",
+        "",
+        "router.get('/${1}/:id', (req, res) => {",
+        "  res.render('${3}');",
+        "});",
+        "",
+        "router.post('/${1}', (req, res) => {",
+        "  res.render('${4}');",
+        "});",
+        "",
+        "router.put('/${1}/:id', (req, res) => {",
+        "  res.render('${5}');",
+        "});",
+        "",
+        "router.delete('/${1}/:id', (req, res) => {",
+        "  res.render('${6}');",
+        "});"
+      ],
+      "description": "Crear una ruta básica en Express."
+    },
     "Express Middleware": {
       "prefix": ["edumm-exp-middleware"],
       "body": [

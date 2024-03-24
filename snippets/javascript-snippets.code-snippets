@@ -1,0 +1,24 @@
+{
+    "MisterEgg": {
+        "prefix": ["edumm-misteregg"],
+        "body": [
+            "// MisterEgg",
+        "var secuenciaDeseada = ['ArrowUp', 'ArrowRight', 'ArrowRight', 'ArrowUp', 'ArrowLeft'];",
+        "var teclasPresionadas = [];",
+        "function verificarSecuencia() {",
+            "if (teclasPresionadas.length === secuenciaDeseada.length) {",
+                "if (teclasPresionadas.every((tecla, indice) => tecla === secuenciaDeseada[indice])) {",
+                    "window.location.href = 'https://github.com/EduMMorenolp';",
+                "}",
+                "teclasPresionadas = [];",
+            "}",
+        "}",
+        "document.addEventListener('keydown', function (event) {",
+            "teclasPresionadas.push(event.key);",
+            "verificarSecuencia();",
+        "});"
+        
+        ],
+        "description": "MisterEgg Combo Redes Sociales"
+    }
+}
