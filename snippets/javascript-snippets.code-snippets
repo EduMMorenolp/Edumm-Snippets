@@ -20,5 +20,33 @@
         
         ],
         "description": "MisterEgg Combo Redes Sociales"
+    },
+    "Escribiendo": {
+        "prefix": ["edumm-text-escritura"],
+        "body": [
+            "/* Efecto de escritura */",
+        "const textos = [",
+        "Texto 1",
+        "Texto 2",
+        "Texto 3",
+        "Texto 4",
+        "];",
+        "const intervalo = 100; // milisegundos",
+
+        "function escribirTexto(index, elemento) {",
+           "if (index < textos[elemento].length) {",
+                "document.getElementById(`texto-escrito-${elemento + 1}`).textContent += textos[elemento][index];",
+                "setTimeout(() => escribirTexto(index + 1, elemento), intervalo);",
+            "}",
+        "}",
+
+        "for (let i = 0; i < textos.length; i++) {",
+            "escribirTexto(0, i);",
+        "}"
+        ],
+        "description": "Escritura de textos"
     }
+
+
+     
 }
