@@ -18,7 +18,7 @@
     "description": "Express-Server"
   },
   "Express Route": {
-    "prefix": ["edumm-express-route-ES6"],
+    "prefix": ["edumm-express-route"],
     "body": [
       "app.${1:get}('${2:/ruta}', (req, res) => {",
       "\tres.send('${3:Respuesta}');",
@@ -27,20 +27,22 @@
     "description": "Crear una ruta básica en Express."
   },
   "Express Routes CRUD": {
-    "prefix": ["edumm-express-routes-crud"],
+    "prefix": ["edumm-express-routes-crud-ES6"],
     "body": [
       "import { Router } from 'express';",
-      "import { ${7} } from '../controllers/${8}';",
+      "import { ${3} } from '../controllers/${2}';",
       "",
-      "router.get('/${1}', ${2});",
+      "const router = Router();",
       "",
-      "router.get('/${1}/:id', ${3});",
+      "router.get('/${1}', ${4});",
       "",
-      "router.post('/${1}', ${4});",
+      "router.get('/${1}/:id', ${5});",
       "",
-      "router.put('/${1}/:id', ${5});",
+      "router.post('/${1}', ${6});",
       "",
-      "router.delete('/${1}/:id',${6});"
+      "router.put('/${1}/:id', ${7});",
+      "",
+      "router.delete('/${1}/:id',${8});"
     ],
     "description": "Crear rutas básicas en Express."
   },
@@ -67,7 +69,7 @@
   "Express Body Parser Middleware": {
     "prefix": ["edumm-express-body-parser"],
     "body": [
-      "const bodyParser = require('body-parser');",
+      "import { bodyParser } from 'body-parser';",
       "",
       "app.use(bodyParser.json());",
       "app.use(bodyParser.urlencoded({ extended: false }));"
@@ -86,51 +88,6 @@
       "app.set('view engine', '${2:pug}');"
     ],
     "description": "Configurar vistas y motor de plantillas en Express."
-  },
-  "Express GET Request": {
-    "prefix": ["edumm-express-get"],
-    "body": [
-      "app.get('${1:/ruta}', (req, res) => {",
-      "\tres.send('${2:Respuesta}');",
-      "});"
-    ],
-    "description": "Manejar solicitudes GET en Express."
-  },
-  "Express POST Request": {
-    "prefix": ["edumm-express-post"],
-    "body": [
-      "app.post('${1:/ruta}', (req, res) => {",
-      "\tres.send('${2:Respuesta}');",
-      "});"
-    ],
-    "description": "Manejar solicitudes POST en Express."
-  },
-  "Express PUT Request": {
-    "prefix": ["edumm-express-put"],
-    "body": [
-      "app.put('${1:/ruta}', (req, res) => {",
-      "\tres.send('${2:Respuesta}');",
-      "});"
-    ],
-    "description": "Manejar solicitudes PUT en Express."
-  },
-  "Express DELETE Request": {
-    "prefix": ["edumm-express-delete"],
-    "body": [
-      "app.delete('${1:/ruta}', (req, res) => {",
-      "\tres.send('${2:Respuesta}');",
-      "});"
-    ],
-    "description": "Manejar solicitudes DELETE en Express."
-  },
-  "Express PATCH Request": {
-    "prefix": ["edumm-express-patch"],
-    "body": [
-      "app.patch('${1:/ruta}', (req, res) => {",
-      "\tres.send('${2:Respuesta}');",
-      "});"
-    ],
-    "description": "Manejar solicitudes PATCH en Express."
   },
   "Express CORS Configuration": {
     "prefix": ["edumm-express-cors"],
