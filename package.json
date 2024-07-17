@@ -1,7 +1,7 @@
 {
   "name": "edumm-snippets",
-  "displayName": "Conjunto de Snippets EduMM",
-  "description": "Conjunto de snippets para Visual Studio Code",
+  "displayName": "Snippets EduMMoreno",
+  "description": "Conjunto de snippets para Visual Studio Code de Eduardo Moreno",
   "version": "0.0.1",
   "publisher": "EduMMoreno",
   "engines": {
