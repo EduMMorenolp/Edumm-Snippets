@@ -317,5 +317,75 @@
       "};"
     ],
     "description": "Estructura básica para un controlador que maneja operaciones CRUD en una base de datos usando Prisma."
+  },
+  "Express JWT Authentication": {
+    "prefix": ["edumm-express-jwt"],
+    "body": [
+      "import jwt from 'jsonwebtoken';",
+      "",
+      "// Función para generar un token JWT",
+      "const generateToken = (user) => {",
+      "  return jwt.sign({ id: user.id }, '${1:mySecret}', { expiresIn: '${2:1h}' });",
+      "};",
+      "",
+      "// Middleware para verificar el token",
+      "const verifyToken = (req, res, next) => {",
+      "  const token = req.headers['authorization'];",
+      "  if (!token) return res.status(403).send('Token no proporcionado.');",
+      "",
+      "  jwt.verify(token, '${1:mySecret}', (err, decoded) => {",
+      "    if (err) return res.status(401).send('Token inválido.');",
+      "    req.userId = decoded.id;",
+      "    next();",
+      "  });",
+      "};"
+    ],
+    "description": "Implementar autenticación JWT en Express."
+  },
+  "Express User Registration with Bcrypt": {
+    "prefix": ["edumm-express-register"],
+    "body": [
+      "import bcrypt from 'bcrypt';",
+      "",
+      "// Función para registrar un nuevo usuario",
+      "const registerUser = async (req, res) => {",
+      "  const { username, password } = req.body;",
+      "",
+      "  // Generar hash de la contraseña",
+      "  const saltRounds = 10;",
+      "  bcrypt.hash(password, saltRounds, async (err, hash) => {",
+      "    if (err) return res.status(500).send('Error al generar el hash.');",
+      "",
+      "    // Aquí se guardaría el usuario en la base de datos",
+      "    // await User.create({ username, password: hash });",
+      "    res.status(201).send('Usuario registrado con éxito.');",
+      "  });",
+      "};"
+    ],
+    "description": "Implementar registro de usuario con hash de contraseña usando bcrypt."
+  },
+  "Express User Login with Bcrypt": {
+    "prefix": ["edumm-express-login"],
+    "body": [
+      "// Función para iniciar sesión",
+      "const loginUser = async (req, res) => {",
+      "  const { username, password } = req.body;",
+      "",
+      "  // Buscar el usuario en la base de datos",
+      "  // const user = await User.findOne({ where: { username } });",
+      "  // if (!user) return res.status(404).send('Usuario no encontrado.');",
+      "",
+      "  // Verificar la contraseña",
+      "  bcrypt.compare(password, user.password, (err, match) => {",
+      "    if (err) return res.status(500).send('Error al verificar la contraseña.');",
+      "    if (!match) return res.status(401).send('Contraseña incorrecta.');",
+      "",
+      "    // Aquí se podría generar un token JWT",
+      "    // const token = jwt.sign({ id: user.id }, 'secret_key');",
+      "    res.status(200).send('Inicio de sesión exitoso.');",
+      "  });",
+      "};"
+    ],
+    "description": "Implementar inicio de sesión de usuario con verificación de contraseña usando bcrypt."
   }
 }
