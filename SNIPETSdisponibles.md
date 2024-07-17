@@ -126,3 +126,66 @@ app.use(morgan('dev'));
 ```
 * Prefix: edumm-express-morgan
 * Descripción: Configurar Morgan para registrar solicitudes HTTP en Express usando ES6.
+
+### 12. Controlador Básico
+
+```javascript
+// Importar el modelo necesario
+import ${1:Model} from '../models/${2:modelName}.js';
+
+// Obtener todos los elementos
+export const getAll${1} = async (req, res) => {
+  try {
+    const items = await ${1:Model}.find();
+    res.status(200).json(items);
+  } catch (error) {
+    res.status(500).json({ message: 'Error al obtener elementos' });
+  }
+};
+
+// Obtener un elemento por ID
+export const get${1}ById = async (req, res) => {
+  try {
+    const item = await ${1:Model}.findById(req.params.id);
+    if (!item) return res.status(404).json({ message: 'Elemento no encontrado' });
+    res.status(200).json(item);
+  } catch (error) {
+    res.status(500).json({ message: 'Error al obtener el elemento' });
+  }
+};
+
+// Crear un nuevo elemento
+export const create${1} = async (req, res) => {
+  try {
+    const newItem = new ${1:Model}(req.body);
+    await newItem.save();
+    res.status(201).json(newItem);
+  } catch (error) {
+    res.status(400).json({ message: 'Error al crear el elemento' });
+  }
+};
+
+// Actualizar un elemento por ID
+export const update${1} = async (req, res) => {
+  try {
+    const updatedItem = await ${1:Model}.findByIdAndUpdate(req.params.id, req.body, { new: true });
+    if (!updatedItem) return res.status(404).json({ message: 'Elemento no encontrado' });
+    res.status(200).json(updatedItem);
+  } catch (error) {
+    res.status(400).json({ message: 'Error al actualizar el elemento' });
+  }
+};
+
+// Eliminar un elemento por ID
+export const delete${1} = async (req, res) => {
+  try {
+    const deletedItem = await ${1:Model}.findByIdAndDelete(req.params.id);
+    if (!deletedItem) return res.status(404).json({ message: 'Elemento no encontrado' });
+    res.status(204).send();
+  } catch (error) {
+    res.status(500).json({ message: 'Error al eliminar el elemento' });
+  }
+};
+```
+* Prefix: edumm-express-controller-mongo
+* Descripción: Estructura básica para un controlador que maneja operaciones CRUD en un modelo de Mongoose.* 
